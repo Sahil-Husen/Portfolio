@@ -1,47 +1,49 @@
 import React from "react";
-import { Home, FileText, Github, Linkedin } from "lucide-react";
+import { Home, FileText, Github } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import { NavLink } from "react-router";
 
 function Navigation() {
   return (
     <div className="flex gap-2  justify-around items-center h-16 text-sm">
       {/* Home */}
-      <a
-        href="#home"
-        className="flex flex-col items-center text-gray-400 hover:text-white transition"
+      <NavLink
+        to="/"
+        className="flex flex-col items-center text-amber-50 hover:text-amber-600 transition"
       >
         <Home size={20} />
         <span className="text-xs mt-1">Home</span>
-      </a>
+      </NavLink>
 
       {/* Blog */}
-      <a
-        href="#blog"
-        className="flex flex-col items-center text-gray-400 hover:text-white transition"
+      <NavLink
+        to="/blog"
+        className="flex flex-col items-center text-amber-50 hover:text-amber-600 transition"
       >
         <FileText size={20} />
         <span className="text-xs mt-1">Blog</span>
-      </a>
+      </NavLink>
 
       {/* GitHub */}
       <a
-        href="https://github.com/YOUR_USERNAME"
+        href="https://github.com/Sahil-Husen"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex flex-col items-center text-gray-400 hover:text-white transition"
+        className="flex flex-col items-center text-amber-50 hover:text-amber-600 transition"
       >
         <Github size={20} />
         <span className="text-xs mt-1">GitHub</span>
       </a>
 
-      {/* LinkedIn */}
+      {/* NavLinkedIn */}
       <a
-        href="https://linkedin.com/in/YOUR_USERNAME"
+        href="https://www.linkedin.com/in/sahil-hussain-5a5488254/"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex flex-col items-center text-gray-400 hover:text-white transition"
+        className="flex flex-col items-center text-amber-50 hover:text-amber-600 transition"
       >
         <Linkedin size={20} />
-        <span className="text-xs mt-1">LinkedIn</span>
+        <span className="text-xs mt-1">Linkedln</span>
       </a>
     </div>
   );

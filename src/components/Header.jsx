@@ -4,7 +4,7 @@ import ProfileImg from "../assets/ProfileImg.jpeg";
 function Header() {
   return (
     <div>
-      <div className="flex gap-4">
+      <div className="flex gap-4 ">
         <div>
           <h1 className="text-6xl font-bold">Hi, I'm Sahil 👋</h1>
           <p className="mt-2 text-xl w-[26em]">
