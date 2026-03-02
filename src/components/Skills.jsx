@@ -1,4 +1,5 @@
 import React from "react";
+import { useTheme } from "../context/Theme";
 
 function Skills() {
   const products = [
@@ -10,8 +11,11 @@ function Skills() {
     { id: 6, name: "Git & GitHub" },
   ];
 
+
+  const { darkMode } = useTheme();
+
   return (
-    <div className="mt-8 px-4">
+    <div className="mt-8">
       <div>
         <h1 className="text-2xl font-bold">Skills</h1>
       </div>
@@ -20,9 +24,9 @@ function Skills() {
         {products.map((elem) => (
           <div
             key={elem.id}
-            className="bg-white text-black px-3 py-1 rounded-se-md text-sm 
+            className={` ${darkMode ? "bg-white text-black" :"bg-black text-white"}  px-3 py-1 rounded-se-md text-sm 
                        hover:bg-amber-300 transition-all duration-300 
-                       shadow-sm hover:shadow-md"
+                       shadow-sm hover:shadow-md animate-pulse `}
           >
             <p>{elem.name}</p>
           </div>

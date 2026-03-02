@@ -1,15 +1,17 @@
 import React from "react";
 import ProfileImg from "../assets/ProfileImg.jpeg";
+ 
 
 function Header() {
+  
+
   return (
     <div>
       <div className="flex gap-4 ">
         <div>
           <h1 className="text-6xl font-bold">Hi, I'm Sahil 👋</h1>
-          <p className="mt-2 text-xl w-[26em]">
-            Full Stack Developer with a System Programming Core — building from
-            frontend to the Backend.
+          <p className="mt-2 text-xl w-[25em]">
+            Full Stack Developer focused on building performant, scalable, and production-ready web application.
           </p>
         </div>
         <div className="flex justify-center md:justify-end">
@@ -24,7 +26,6 @@ function Header() {
           />
         </div>
       </div>
-       
     </div>
   );
 }
