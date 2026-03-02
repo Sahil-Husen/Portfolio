@@ -10,7 +10,7 @@ function Header() {
       <div className="flex gap-4 ">
         <div>
           <h1 className="text-6xl font-bold">Hi, I'm Sahil 👋</h1>
-          <p className="mt-2 text-xl w-[25em]">
+          <p className="mt-2 text-xl w-[27em]">
             Full Stack Developer focused on building performant, scalable, and production-ready web application.
           </p>
         </div>

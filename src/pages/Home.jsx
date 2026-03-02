@@ -7,7 +7,7 @@ import Education from "../components/Education";
 
 function Home() {
   return (
-    <div className="px-6 sm:px-16 lg:px-32 py-20 pb-24 ">
+    <div className="px-6 sm:px-16 lg:px-32 py-30 pb-24 ">
       <Header />
       <About />
       <Skills />

@@ -23,7 +23,7 @@ function App() {
 
         {/* Bottom Navigation */}
         <div
-          className={`fixed bottom-6 left-1/2 -translate-x-1/2 
+          className={`fixed  bottom-6 left-1/2 -translate-x-1/2 
                        ${darkMode ? " bg-black":"bg-black "} backdrop-blur-md 
                         px-10 py-1 rounded-full 
                         shadow-2xl border border-white/20`}
