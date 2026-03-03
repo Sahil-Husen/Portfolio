@@ -5,6 +5,9 @@ import Skills from "../components/Skills";
 import Project from "../components/Project";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
+import Cetification from "../components/Certification";
+ 
+
 
 function Home() {
   return (
@@ -15,6 +18,8 @@ function Home() {
       <Project />
       <Education />
       <Experience></Experience>
+      <Cetification></Cetification>
+      
     </div>
   );
 }

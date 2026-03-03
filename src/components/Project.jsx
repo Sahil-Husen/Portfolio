@@ -110,8 +110,8 @@ function Project() {
 
                 {/* Description */}
                 <p
-                  className={`text-sm ${darkMode ? "text-white font-semibold" : "text-[#381714] font-semibold"}  mt-1 leading-relaxed`}
-                >
+                  className={`text-sm ${darkMode ? "text-white font-normal" : "text-[#381714] font-normal "}  mt-1 leading-relaxed`}
+                > 
                   {elem.description}
                 </p>
 
