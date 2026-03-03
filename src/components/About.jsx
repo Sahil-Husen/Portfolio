@@ -8,15 +8,27 @@ function About() {
       <div className="mt-8">
         <h1 className="text-2xl font-bold">About</h1>
       </div>
-      <div> 
-        <p className={` ${darkMode ? "" : "text-[#423f3f]"}   text-sm `}>
-          I'm a full stack developer with a strong foundation in Java, operating
-          systems, and System Design. From building intuitive UIs with React to
-          engineering performant backends and writing custom file sync or proxy
-          servers in Expressjs, I love creating end-to-end systems that are both
-          user-friendly and deeply optimized. I believe in understanding things
-          from the metal up — whether it's browser-side rendering or
-          socket-level data transfer.{" "}
+      <div>
+        <p
+          className={`text-sm leading-relaxed ${darkMode ? "text-zinc-400" : "text-[#423f3f]"}`}
+        >
+          I'm a full stack developer with a strong foundation in{" "}
+          <span
+            className={`font-medium ${darkMode ? "text-white" : "text-black"}`}
+          >
+            Java, operating systems, and System Design.
+          </span>{" "}
+          From building intuitive UIs with React to engineering performant
+          backends and writing custom{" "}
+          <span
+            className={`font-medium ${darkMode ? "text-white" : "text-black"}`}
+          >
+            file sync & proxy servers
+          </span>{" "}
+          in Express.js, I love creating end-to-end systems that are both
+          user-friendly and deeply optimized. I believe in understanding things{" "}
+          <span className="text-amber-400 font-medium">from the metal up</span>{" "}
+          — whether it's browser-side rendering or socket-level data transfer.
         </p>
       </div>
     </div>

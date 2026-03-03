@@ -6,20 +6,19 @@ import Project from "../components/Project";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
 import Cetification from "../components/Certification";
- 
-
+import Contact from "../components/Contact";
 
 function Home() {
   return (
-    <div className="px-6 sm:px-16 lg:px-32 py-30 pb-24 ">
+    <div className="py-16 pb-24">
       <Header />
       <About />
       <Skills />
       <Project />
       <Education />
-      <Experience></Experience>
-      <Cetification></Cetification>
-      
+      <Experience />
+      <Cetification />
+      <Contact></Contact>
     </div>
   );
 }
