@@ -3,9 +3,7 @@ import Navigation from "../components/Navigation";
 
 function Navigate() {
   return (
-    <div
-      
-    >
+    <div>
       <Navigation />
     </div>
   );

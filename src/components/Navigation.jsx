@@ -1,12 +1,20 @@
 import React from "react";
-import { Home, BookOpenText , Github, Linkedin, Sun, MoonStar,Terminal } from "lucide-react";
+import {
+  Home,
+  BookOpenText,
+  FileText,
+  Github,
+  Linkedin,
+  Sun,
+  MoonStar,
+  Terminal,
+} from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../context/Theme";
 
 function Navigation() {
   const { toggleTheme, darkMode } = useTheme();
 
-  
   return (
     <div className="flex gap-3 justify-around items-center h-16 text-sm">
       <NavLink
@@ -17,13 +25,15 @@ function Navigation() {
         <span className="text-xs mt-1">Home</span>
       </NavLink>
 
-      <NavLink
-        to="/blog"
+      <a
+        href="https://drive.google.com/file/d/1Fpcy4J3VnEK3zjsxqOaIApzbVVJQ9xwG/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex flex-col items-center text-amber-50 hover:text-[#006BFF] transition"
       >
-        <BookOpenText size={20} />
-        <span className="text-xs mt-1">Blog</span>
-      </NavLink>
+        <FileText size={20} />
+        <span className="text-xs mt-1">Resume</span>
+      </a>
 
       <a
         href="https://github.com/Sahil-Husen"
