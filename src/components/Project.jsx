@@ -19,7 +19,7 @@ function Project() {
         "NeuroChat AI is a modern AI-powered chat application inspired by Gemini, delivering real-time, context-aware responses through seamless API integration and a clean, responsive user interface.",
       techStack: ["NodeJS", "ReactJS", "ExpressJS", "MongoDB"],
       website: "https://google-gemini-clone-fbsa.vercel.app/",
-      source: "",
+      source: "https://github.com/Sahil-Husen/Google-Gemini-Clone",
     },
     {
       id: 2,
@@ -89,11 +89,7 @@ function Project() {
             hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col`}
           >
             {/* Image */}
-            <a
-              href={elem.website}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={elem.website} target="_blank" rel="noopener noreferrer">
               <img
                 className="w-full h-44 object-cover"
                 src={elem.img}
@@ -109,14 +105,10 @@ function Project() {
               </span>
 
               {/* Title */}
-              <h3 className="mt-2 text-lg font-semibold">
-                {elem.title}
-              </h3>
+              <h3 className="mt-2 text-lg font-semibold">{elem.title}</h3>
 
               {/* Duration */}
-              <p className="text-xs mt-1 opacity-70">
-                {elem.duration}
-              </p>
+              <p className="text-xs mt-1 opacity-70">{elem.duration}</p>
 
               {/* Description */}
               <p className="text-sm mt-2 leading-relaxed flex-1">
