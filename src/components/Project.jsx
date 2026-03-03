@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "../context/Theme";
 import geminiImg from "../assets/gemini.png";
 import slms from "../assets/slms.png";
-import bigboy from "../assets/bigboy.png";
+import bigboy from "../assets/bigBoy.png";
 import editor from "../assets/editor.png";
 
 function Project() {
