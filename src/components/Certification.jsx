@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTheme } from "../context/Theme";
 import cert1 from "../assets/Certificate1.png";
 import cert2 from "../assets/cert2.png";
+import cert3 from "../assets/amuCer.jpg"
 import { X } from "lucide-react";
 
 function Cetification() {
@@ -16,8 +17,15 @@ function Cetification() {
   };
 
   let certificates = [
+
     {
       id: 1,
+      name: "AMU Hackathon",
+      description: "First Prize Winner! of AMU Hackathon",
+      img: cert3,
+    },
+    {
+      id: 2,
       name: "Backend Development",
       description: "Completed Backend Development Using Nodejs/Expressjs",
       img: cert2,
@@ -39,14 +47,14 @@ function Cetification() {
         return (
           <div
             key={elem.id}
-            className="mt-4 flex justify-between items-center gap-2 bg-gray-50 p-5  "
+            className={`mt-4 flex justify-between items-center gap-2 ${darkMode ? "bg-[#061E29] text-white" : "bg-gray-100 text-black"}  p-5  `}
           >
             <div>
               <h1 className="font-medium text-sm ">{elem.name}</h1>
               <p className="text-gray-500 text-sm  mt-2">{elem.description}</p>
             </div>
             <div
-              className={`mt-5 flex justify-center items-center  ${darkMode ? "bg-[#061E29] text-white" : "bg-[#eaeaea] text-black"} w-100 p-5 h-60 rounded `}
+              className={`mt-5 flex justify-center items-center   w-100 p-5 h-60 rounded `}
             >
               <div>
                 <img
